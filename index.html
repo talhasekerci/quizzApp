@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="quizActive">
+    <div class="introduction">
+        <h1><span>Quiz</span> App</h1>
+        <h2> Her soru için 30 saniye toplam da 5 dakika zamanınız var. Hadi başlayın!</h2>
+        <button id="start">
+            Başlat
+        </button>
+    </div>
+    <div class="quiz">
+        <div class="dec-line"></div>
+        <div class="dec-line2"></div>
+        <div class="title-cont">
+            <span class="sub-title">Quiz App</span>
+            <h1 class="title">Soru <span id="questionNumber">1</span>/<span id="totalNumber">10</span></h1>
+        </div>
+        <div class="question-container">
+            <div class="timer-container">
+                <span id="countdown">30</span> 
+                <div class="timer"></div> 
+            </div>
+            <h2 class="question" id="questionText"></h2>
+            <div class="options-container" id="optionsContainer">
+            </div>
+            <input type="button" id="nextButton" disabled value="Sonraki">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
